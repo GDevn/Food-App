@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:textStyle="bold"
+        android:text="Food Item"
+
+        android:id="@+id/foodItem"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/foodItem"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:paddingLeft="10dp"
+
+        android:textStyle="italic"
+        android:text="Restaurant Name"
+
+        android:id="@+id/restaurantName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/restaurantName"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:paddingLeft="10dp"
+
+        android:text="Single Serving Price"
+
+        android:id="@+id/servingPrice"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/restaurantName"
+        app:layout_constraintLeft_toRightOf="@id/servingPrice"
+
+        android:text="x"
+
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+
+        android:id="@+id/x"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/restaurantName"
+        app:layout_constraintLeft_toRightOf="@id/x"
+
+        android:paddingLeft="10dp"
+
+        android:text="Quantity"
+
+        android:id="@+id/quantity"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:text="Total Price"
+
+
+        android:id="@+id/totalPrice"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
